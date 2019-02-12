@@ -1,0 +1,84 @@
+body {
+  padding: 10px;
+  text-align: center;
+}
+
+button {
+  padding: 11px 50px;
+  margin: 50px;
+
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+
+  color: #fff;
+  background-color: #02ac46;
+  border: 2px solid #02ac46;
+  border-radius: 4px;
+  cursor: pointer;
+}
+ button:hover, button:active {
+  color: #02ac46;
+  background-color: #fff;
+	}
+.btn {
+  display: inline-flex;
+}
+.score {
+  height: 150px;
+  width: 300px;
+  background-color: #02ac46;
+  float: left;
+  margin: 20px;
+}
+.score2 {
+  height: 150px;
+  width: 300px;
+  background-color: #02ac46;
+  float: right;
+  margin: 20px;
+}
+p {
+  margin: 0 auto;
+  font-weight: 600;
+  color: #fff;
+  font-family: Arial;
+  font-size: 25px;
+  padding-top: 10px;
+}
+.playerscore {
+  padding-top: 20px;
+  font-weight: 600;
+  color: #fff;
+  font-family: Arial;
+  font-size: 25px;
+}
+.computerscore {
+  padding-top: 20px;
+  font-weight: 600;
+  color: #fff;
+  font-family: Arial;
+  font-size: 25px;
+}
+.round {
+  height: 150px;
+  width: 300px;
+  background-color: #02ac46;
+  margin: 20px;
+}
+.rounds2 {
+  padding-top: 20px;
+  font-weight: 600;
+  color: #fff;
+  font-family: Arial;
+  font-size: 25px;
+}
+.table {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-disabled {
+  background-color: rgb(105, 109, 105);
+  border: 2px solid rgb(105, 109, 105);
+}
