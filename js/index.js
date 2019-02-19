@@ -169,10 +169,10 @@ function refresh() {
   }
 
 function buildTable() {
-    var tableCode = '<thead><tr><th>runda</th><th>Ruch gracza</th><th>Ruch Komputera</th><th>Zwycięzca</th><th>Wynik</th></tr></thead>';
+    var tableCode = '<table><thead><tr><th>runda</th><th>Ruch gracza</th><th>Ruch Komputera</th><th>Zwycięzca</th><th>Wynik</th></tr></thead>';
     for (var i = 0; i < params.progress.length; i++)
     {
-        var tabletd = '<tbody><tr><td>' + params.roundsCounter + '</td><td>' + playerMove + '</td><td>' + computerMove + '</td><td>' + params.Winner + '</td><td>' + params.wins + ' - ' + params.lost + '</td></tr></tbody>';
+        var tabletd = '<tbody><tr><td>' + params.roundsCounter + '</td><td>' + playerMove + '</td><td>' + computerMove + '</td><td>' + params.Winner + '</td><td>' + params.wins + ' - ' + params.lost + '</td></tr></tbody></table>';
     }
     tablemaker.innerHTML = tableCode + tabletd;
 }
