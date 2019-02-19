@@ -6,7 +6,7 @@ var paper = document.getElementById("button2");
 var scissors = document.getElementById("button3");
 var cScorepoints = document.getElementById("cscore");
 var pScorepoints = document.getElementById("pscore");
-var tablemaker = document.querySelector('.table');
+var tablemaker = document.querySelector('.tablepoint');
 var params = {
     cpoint: 0,
     ppoint: 0,
@@ -169,5 +169,5 @@ function refresh() {
   }
 
 function buildTable() {
-    
+    tablemaker.insertAdjacentHTML("beforeEnd", '<thead>' + '<tr>' + '<th>' + 'runda' + '</th>' + '<th>' + 'Ruch gracza' + '</th>' + '<th>' + 'Ruch Komputera' + '</th>' + '<th>' + 'Zwycięzca' + '</th>' + '<th>' + 'Wynik' + '</th>' + '</tr>' + '</thead>' + '<tbody>' + '<tr>' + '<td>' + params.roundsCounter + '</td>' + '<td>' + playerMove + '</td>' + '<td>' + computerMove + '</td>' + '<td>' + params.Winner + '</td>' + '<td>' + params.wins + ' - ' + params.lost + '</td>' + '</tr>' + '</tbody>')
 }
